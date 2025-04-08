@@ -11,8 +11,11 @@ import configparser
 import streamlit as st
 import random
 
-nlp= en_core_web_sm.load()
-#nlp= spacy.load("en_core_web_sm")
+
+import spacy
+nlp = spacy.load("en_core_web_sm")
+
+
 stopwords = list(STOP_WORDS)
 punctuation = punctuation + "\n"
 
